@@ -15,7 +15,6 @@ export default function HeroSection() {
                         Hahaha Hello there, I am Peter
                         <br />graduated from UNSW and currently looking for jobs.
                         <br />Please Hire me
-                        <br/>我要工作啊啊啊啊啊
                     </p>
                 </div>
                 <button className="btn btn-primary">Get In Touch</button>
