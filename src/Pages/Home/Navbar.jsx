@@ -1,34 +1,36 @@
-import  {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
+
     const toggleNav = () => {
         setNavActive(!navActive);
     };
 
-    const closeMenu = () =>{
-
+    const closeMenu = () => {
+        setNavActive(false);
     };
 
     useEffect(() => {
-        const handleResize = () =>{
-            if(window.innerWidth <= 500) {
-                closeMenu()
+        const handleResize = () => {
+            if (window.innerWidth <= 500) {
+                closeMenu;
             }
-        }
+        };
+
         window.addEventListener("resize", handleResize);
 
         return () => {
             window.removeEventListener("resize", handleResize);
-        }
+        };
     }, []);
 
     useEffect(() => {
-        if(window.innerWidth <= 1200) {
-            closeMenu()
+        if (window.innerWidth <= 1200) {
+            closeMenu;
         }
-    },[])
+    }, []);
 
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
@@ -53,7 +55,7 @@ function Navbar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="home"
+                            to="heroSection"
                             className="navbar--content"
                         >
                             Home
@@ -67,10 +69,10 @@ function Navbar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="aboutMe"
+                            to="MyPortfolio"
                             className="navbar--content"
                         >
-                            About Me
+                            Portfolio
                         </Link>
                     </li>
                     <li>
@@ -81,10 +83,10 @@ function Navbar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="myPortfolio"
+                            to="AboutMe"
                             className="navbar--content"
                         >
-                            Portfolio
+                            About Me
                         </Link>
                     </li>
                     <li>
