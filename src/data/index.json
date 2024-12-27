@@ -24,5 +24,55 @@
       "title": "Machine Learning",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
+  ],
+
+  "portfolio": [
+    {
+      "id": 1,
+      "src": "./img/placeholder-image.png",
+      "title": "Cross-Platform TB Detection Mobile App",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "link": "View In Github"
+    },
+    {
+      "id": 2,
+      "src": "./img/placeholder-image-1.png",
+      "title": "3D Story Software Toolkit",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "link": "View In Github"
+    },
+    {
+      "id": 3,
+      "src": "./img/placeholder-image-2.png",
+      "title": "Volcano Website",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "link": "View In Github"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": 1,
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "author_name": "David Jones",
+      "author_designation": "Starbucks"
+    },
+    {
+      "id": 2,
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "author_name": "Bruce Banner",
+      "author_designation": "Louis Vuitton"
+    },
+    {
+      "id": 3,
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "author_name": "Steven Rogers",
+      "author_designation": "McDonald's"
+    }
   ]
 }
